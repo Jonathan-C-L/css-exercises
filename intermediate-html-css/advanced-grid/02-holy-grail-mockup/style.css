@@ -32,15 +32,32 @@ li{
   list-style-type: none;
 }
 
+.menu{
+  align-self: center;
+}
 .menu ul,
 .menu li {
   font-size: 16px;
   display: inline;
 }
+.menu>ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.nav>ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.photo{
+  align-content: space-around;
+}
 
 .sidebar {
   background-color: #C50208;
   grid-area: 2/1/span 2;
+  display: grid;
+  gap: 50px;
+  align-items: space-around;
 }
 
 .sidebar .photo {
@@ -78,6 +95,9 @@ li{
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+.article{
+  display: grid;
 }
 
 .article .card {
